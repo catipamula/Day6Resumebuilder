@@ -1,0 +1,243 @@
+:root {
+  --primaryColor: rgba(150, 246, 60, 0.929);
+  --secondaryColor:Black;
+  --inputColor: #d3eac4eb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+section {
+  margin-bottom: 3rem;
+  color: #0c60ce;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  width: 100%;
+  background: var(--inputColor);
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+}
+
+
+.introTxt {
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.intro {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+
+
+.top .imgDiv {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem auto 2rem;
+  border: 10px solid rgba(236, 236, 236, 0.808);
+}
+
+.top .imgDiv:hover #imgBtn {
+  display: block;
+}
+
+.top .imgDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top .imgDiv #file {
+  display: none;
+}
+
+.top .imgDiv #imgBtn {
+  position: absolute;
+  width: 100%;
+  background: #000000a6;
+  text-align: center;
+  padding: 0.7rem 0.7rem 0.8rem;
+  bottom: -10px;
+  left: 0;
+  color: var(--secondaryColor);
+  cursor: pointer;
+  font-size: 15px;
+  display: none;
+  -webkit-transition: display 0.5s ease;
+  transition: display 0.5s ease;
+}
+
+
+.top .contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align:center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.experienceDiv div {
+  margin-bottom: 10px;
+}
+
+.experienceDiv input {
+  margin-top: 5px;
+  background: var(--inputColor);
+}
+
+.experienceDiv .date {
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.experienceDiv .date div {
+  margin: 10px 0;
+}
+.btn button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
+  font-size: 15px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.btn button:focus {
+  outline: none;
+}
+
+.btn button:hover {
+  background: #000000a6;
+}
+
+.profile div {
+  margin-bottom: 10px;
+}
+
+.profile input,
+.profile textarea {
+  margin-top: 10px;
+  background: var(--inputColor);
+}
+
+.profile .date {
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.profile .date div {
+  margin: 10px 0;
+}
+
+
+.profile #summary {
+  height: 200px;
+}
+
+
+.mainBtn {
+  width: 100%;
+}
+  #downloadBtn {
+    display: none;
+    background: #4acf4a;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  #downloadBtn:hover {
+    background: #6cbe6c;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .gridCol {
+      display: -ms-grid;
+      display: grid;
+    
+          grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .skillsGridCol {
+      display: -ms-grid;
+      display: grid;
+    
+          grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+  
+ 
+  
+  @media screen and (min-width: 900px) {
+    .top {
+  
+          grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .mainBtn #previewBtn {
+    padding: 10px;
+    margin: auto;
+    color: var(--secondaryColor);
+    background:#25cf19;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .mainBtn #previewBtn:hover {
+    background: #25cf19;
+  }
